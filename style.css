@@ -1,0 +1,301 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+
+body {
+    font-family: 'Open Sans',
+        sans-serif;
+    color: white;
+    text-shadow: 0 4px 6px 0 rgba(44, 47, 54, 0.28);
+    background-color: #dfe4ea;
+    min-height: 100vh;
+}
+
+img {
+    width: 180px;
+    height: 210px;
+    border: white 1px solid;
+    border-radius: 50%;
+
+}
+
+
+h1,
+h2 {
+    color: #e84118;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: rgb(44, 47, 54);
+    margin-bottom: 5px;
+}
+
+
+/* Utility */
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+}
+
+/* profil */
+
+.profil {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(44, 47, 54, 0.28);
+}
+
+section {
+    text-align: center;
+}
+
+/* skills */
+
+.skills {
+    background-color: #fff;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(44, 47, 54, 0.28);
+    margin: 20px 0px;
+    padding: 40px;
+}
+
+.skills .skills-bar {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.skills li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: #079992;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(100, 53, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0a3d62;
+}
+
+.bar span {
+    height: 5px;
+    float: left;
+    background-color: #eccc68;
+}
+
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+
+.css {
+    width: 65%;
+    animation: css 2s;
+}
+
+.javascript {
+    width: 1%;
+    animation: one 2s;
+}
+
+.timescript {
+    width: 1%;
+    animation: one 2s;
+}
+
+.git {
+    width: 30%;
+    animation: git 2s;
+}
+
+.angular {
+    width: 1%;
+    animation: one 2s;
+}
+
+.react {
+    width: 1%;
+    animation: one 2s;
+}
+
+.vue {
+    width: 1%;
+    animation: one 2s;
+}
+
+.node {
+    width: 1%;
+    animation: one 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes git {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes one {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 1%;
+    }
+}
+
+
+/* social */
+
+.social {
+    background-color: #fff;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 20px 0px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(44, 47, 54, 0.28);
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.list-inline li {
+    display: inline;
+    padding: 10px;
+}
+
+.list-inline i {
+    font-size: 25px;
+    color: #dcdde1;
+}
+
+.list-inline i:hover {
+    color: #079992;
+}
+
+
+
+/* Responsive Website */
+
+@media (max-width: 760px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: 100%;
+    }
+
+    img {
+        width: 130px;
+        height: 150px;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .skills {
+        padding: 20px 40px;
+    }
+
+
+    .skills .skills-bar {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+
+    body {
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        color: #16a085;
+    }
+
+    h1 {
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        font-size: 26px;
+    }
+
+    h2,
+    h3 {
+        font-weight: lighter;
+        font-size: 18px;
+    }
+
+    img {
+        width: 130px;
+        height: 150px;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .skills {
+        padding: 20px 40px;
+    }
+
+
+    .skills .skills-bar {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
